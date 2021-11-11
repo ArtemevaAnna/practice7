@@ -1,0 +1,6 @@
+def fibbonachi(k):
+    if k in (1,2):
+        return 1
+    return fibbonachi(k-1)+fibbonachi(k-2)
+
+print(fibbonachi(int(input('Введите число: '))))
