@@ -1,0 +1,8 @@
+def print_till_zero(k):
+    if k == 0:
+        return
+    print(k)
+    return print_till_zero(k-1)
+
+
+print(print_till_zero(10))
