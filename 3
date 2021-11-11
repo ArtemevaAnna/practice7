@@ -1,0 +1,15 @@
+def power(a, n):
+    if a == 0:
+        return 0
+    elif n == 0:
+        return 1
+    elif n == 1:
+        return a
+    elif n < 0:
+        return 1 / (a*power(a, -n-1))
+    else:
+        return a*power(a, n-1)
+
+a = float(input('Число:'))
+n = int(input('Его степень:'))
+print(power(a, n))
